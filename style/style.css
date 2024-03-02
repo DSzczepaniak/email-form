@@ -1,0 +1,111 @@
+
+:root {
+    --button-color: #005678;
+    --button-color-hover: #037baa;
+    --button-text-color: #fff;
+    --border-form-color: #7497a5;
+    --background-form-color: #fff;
+    --text-color-placeholder: #333;
+    --border-radius: 4px;
+    --text-color: #01012b;
+    --form-color-background: #fff;
+    --linear-gradient-right: #2ebff8;
+    --linear-gradient-left: #026acb;
+    --form-shadow: #163e63;
+}
+html {
+    font-size: 62.5%;
+}
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;            
+    height: 100vh; 
+    margin: 0; 
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.4rem;
+    color: var(--text-color);
+    background-image: linear-gradient(110deg, var(--linear-gradient-left), var(--linear-gradient-right));
+}
+.circle {
+    width: 100vw;
+    height: 100vw;
+    background-color: var(--linear-gradient-left);
+    border-radius: 50%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    transform: translate(-30%, 60%);
+    opacity: 0.3;
+}
+
+form, .sendEmailContainer {
+    width: 600px; 
+    padding: 20px;
+    margin: 10px;
+    border: 1px solid var(--border-form-color); 
+    border-radius: var(--border-radius); 
+    box-sizing: border-box;
+    text-align: center;
+    background-color: var(--form-color-background);
+    box-shadow: 20px 15px 25px var(--form-shadow);
+    z-index: 1;
+}
+.sendEmailContainer {
+    text-align: center; 
+}
+select, textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    box-sizing: border-box;
+    border: 1px solid var(--border-form-color);     
+    background-color: var(--background-form-color);
+}
+textarea[placeholder] {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.2rem;
+    color: var(--text-color-placeholder);
+}
+fieldset {
+    border: 1px solid var(--border-form-color); 
+    padding: 20px;
+}
+legend {
+    font-size: 2.2rem;
+    font-weight: bold;
+    margin:0 auto;
+    padding: 10px;
+    text-transform: uppercase;
+}
+input[type="submit"], input[type="reset"], input[type="button"] {
+    width: 30%;
+    min-width: 100px;
+    padding: 10px 20px;
+    margin: 10px 5px;
+    background-image: linear-gradient(110deg, var(--linear-gradient-left), var(--linear-gradient-right));
+    color: var(--button-text-color);
+    border: none; 
+    border-radius: var(--border-radius); 
+    cursor: pointer; 
+    text-transform: uppercase;
+}
+input[type="submit"]:hover, input[type="reset"]:hover, input[type="button"]:hover {
+    background-color: var(--button-color-hover);
+}
+#textareaCharCounter {
+    text-align: right;
+    margin: 0px 0px 12px 0px;
+    font-size: 1.2rem;
+}
+button[type="button"] {
+    padding: 5px 10px;
+    margin: 5px 0px;
+    background-image: linear-gradient(110deg, var(--linear-gradient-left), var(--linear-gradient-right));
+    color: var(--button-text-color);
+    border: none; 
+    border-radius: var(--border-radius); 
+    cursor: pointer; 
+    text-transform: uppercase;   
+    text-align: left;
+}
